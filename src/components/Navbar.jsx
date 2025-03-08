@@ -6,13 +6,12 @@ export default function NavBar() {
     return (
         <>
             <h1 className="title">Axel Schuberts CV</h1>
-            {/* <input type="checkbox" id="nav-toggle" className="nav-toggle">
-    <label for="nav-toggle" className="nav-toggle-label" aria-label="Open navigation menu">
-        ☰
-    </label> */}
+            <label htmlFor="" className="nav-toggle-label" aria-label="Open navigation menu" onClick={() =>  setIsNavOpen(!isNavOpen)}>
+                ☰
+            </label>
             <header>
                 <nav>
-                    <ul className="nav-menu">
+                    <ul className= {`nav-menu ${isNavOpen ? "open" : ""}`}>
                         <li><NavLink to="/" className="nav-item nav-left">Start</NavLink></li>
                         <li><NavLink to="/about" className="nav-item">Om mig</NavLink></li>
                         <li><NavLink to="/cv" className="nav-item">CV</NavLink></li>

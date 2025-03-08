@@ -84,10 +84,6 @@ body {
       justify-content: space-between;
   }
 
-  .nav-toggle {
-      display: none;
-  }
-
   .nav-menu NavLink {
       border: 2px solid rgb(9, 6, 1);
 
@@ -115,8 +111,14 @@ body {
 
   }
 
-  .nav-toggle:checked~header .nav-menu {
+  .nav-menu.open {
       display: flex;
+      z-index: 1;
+  }
+
+  .nav-menu.open .nav-item {
+    border-radius: 10px;
+    border: 2px solid black;
   }
 
   .title {
