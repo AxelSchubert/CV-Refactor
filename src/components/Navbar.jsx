@@ -19,7 +19,6 @@ export default function NavBar() {
                         <li><NavLink to="/contact" className="nav-item nav-right">Kontakt</NavLink></li>
                     </ul>
                 </nav>
-                {/* <p classNameName="toggle-input" onClick={() => setIsNavOpen(!isNavOpen)}>✅</p> */}
             </header>
         </>
     )

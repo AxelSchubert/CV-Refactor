@@ -13,12 +13,12 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/ /CV-Refactor" element={<FirstPage />}></Route>
+        <Route path="/C" element={<FirstPage />}></Route>
+        <Route path="/CV-Refactor" element={<FirstPage />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/cv" element={<CV />}></Route>
         <Route path="/about" element={<About />}></Route>
-
       </Routes>
       <Footer />
     </BrowserRouter>
