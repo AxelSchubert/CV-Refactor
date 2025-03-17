@@ -5,7 +5,7 @@ export default function firstpage() {
         <>
             <main>
                 <h1 className="subtitle">Startsida</h1>
-                <img src={codingPicture} alt="Fotografi av html-kod på datorskärm" />
+                <img src={codingPicture} alt="Fotografi av html-kod på en datorskärm" />
             </main>
         </>
     )
