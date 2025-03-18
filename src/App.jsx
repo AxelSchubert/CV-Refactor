@@ -6,11 +6,12 @@ import Portfolio from './pages/portfolio.jsx'
 import Contact from './pages/contact.jsx'
 import CV from './pages/cv.jsx'
 import About from './pages/about.jsx'
+import NotFound from './pages/notfound.jsx';
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="CV-Refactor">
       <NavBar />
       <Routes>
         <Route path="/" element={<FirstPage />}></Route>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/cv" element={<CV />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="*" element={<NotFound />} ></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
